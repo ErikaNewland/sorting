@@ -46,7 +46,7 @@ describe('Bubble Sort', function(){
   it('handles an array with odd number of elements', function(){
     spyOn(window, 'swap').and.callThrough(); // replace existing `tootsiepop['lick']` method
     expect( bubbleSort([7,9,7,3,15,6,8])).toEqual([3,6,7,7,8,9,15]);
-    expect(window.swap.calls.count()).toEqual(3);
+    expect(window.swap.calls.count()).toEqual(20);
   });
 
 });
